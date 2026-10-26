@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  unit:
+    name: Unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm run build
+      - run: npm test
+
+  flutter:
+    name: Flutter ${{ matrix.flutter }}
+    needs: unit
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # Oldest supported (Row/Column `spacing:` needs 3.27) and current stable.
+        flutter: ['3.27.0', '3.38.1']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install && npm run build
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ matrix.flutter }}
+          channel: stable
+          cache: true
+      - name: Generate, analyze and render every fixture screen
+        run: scripts/flutter-check.sh "$RUNNER_TEMP/ci_app"
+      - name: Upload rendered screens
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: goldens-flutter-${{ matrix.flutter }}
+          path: ${{ runner.temp }}/ci_app/test/pixelproof/goldens/
+          if-no-files-found: ignore

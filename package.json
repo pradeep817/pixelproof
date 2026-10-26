@@ -1,0 +1,28 @@
+{
+  "name": "pixelproof",
+  "version": "0.1.0",
+  "description": "Design to code for Figma: Flutter (and soon React Native) screens, verified against your design.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsx --test test/*.test.ts",
+    "pixelproof": "tsx src/cli.ts"
+  },
+  "license": "UNLICENSED",
+  "type": "module",
+  "bin": {
+    "pixelproof": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

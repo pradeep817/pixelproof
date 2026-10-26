@@ -1,0 +1,1321 @@
+{
+  "name": "Auth flows",
+  "version": "42",
+  "nodes": {
+    "1:2": {
+      "document": {
+        "id": "1:2",
+        "name": "Login",
+        "type": "FRAME",
+        "absoluteBoundingBox": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "constraints": {
+          "vertical": "TOP",
+          "horizontal": "LEFT"
+        },
+        "clipsContent": true,
+        "layoutMode": "VERTICAL",
+        "itemSpacing": 24,
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "paddingTop": 64,
+        "paddingBottom": 32,
+        "primaryAxisSizingMode": "FIXED",
+        "counterAxisSizingMode": "FIXED",
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            }
+          }
+        ],
+        "styles": {
+          "fill": "S:white"
+        },
+        "children": [
+          {
+            "id": "1:100",
+            "name": "Glow",
+            "type": "ELLIPSE",
+            "layoutPositioning": "ABSOLUTE",
+            "absoluteBoundingBox": {
+              "x": 230,
+              "y": -60,
+              "width": 220,
+              "height": 220
+            },
+            "constraints": {
+              "vertical": "TOP",
+              "horizontal": "RIGHT"
+            },
+            "fills": [
+              {
+                "type": "GRADIENT_RADIAL",
+                "gradientHandlePositions": [
+                  {
+                    "x": 0.5,
+                    "y": 0.5
+                  },
+                  {
+                    "x": 1,
+                    "y": 0.5
+                  },
+                  {
+                    "x": 0.5,
+                    "y": 1
+                  }
+                ],
+                "gradientStops": [
+                  {
+                    "color": {
+                      "r": 0.30980392156862746,
+                      "g": 0.27450980392156865,
+                      "b": 0.8980392156862745,
+                      "a": 0.25
+                    },
+                    "position": 0
+                  },
+                  {
+                    "color": {
+                      "r": 0.30980392156862746,
+                      "g": 0.27450980392156865,
+                      "b": 0.8980392156862745,
+                      "a": 0
+                    },
+                    "position": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1:101",
+            "name": "Logo",
+            "type": "FRAME",
+            "absoluteBoundingBox": {
+              "x": 24,
+              "y": 64,
+              "width": 48,
+              "height": 48
+            },
+            "constraints": {
+              "vertical": "TOP",
+              "horizontal": "LEFT"
+            },
+            "fills": [],
+            "exportSettings": [
+              {
+                "format": "SVG"
+              }
+            ],
+            "children": [
+              {
+                "id": "1:102",
+                "name": "Mark",
+                "type": "BOOLEAN_OPERATION",
+                "absoluteBoundingBox": {
+                  "x": 28,
+                  "y": 68,
+                  "width": 40,
+                  "height": 40
+                },
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.30980392156862746,
+                      "g": 0.27450980392156865,
+                      "b": 0.8980392156862745,
+                      "a": 1
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1:103",
+            "name": "Header",
+            "type": "FRAME",
+            "absoluteBoundingBox": {
+              "x": 24,
+              "y": 136,
+              "width": 342,
+              "height": 68
+            },
+            "constraints": {
+              "vertical": "TOP",
+              "horizontal": "LEFT"
+            },
+            "fills": [],
+            "layoutMode": "VERTICAL",
+            "itemSpacing": 8,
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG",
+            "children": [
+              {
+                "id": "1:104",
+                "name": "Title",
+                "type": "TEXT",
+                "characters": "Welcome back",
+                "absoluteBoundingBox": {
+                  "x": 24,
+                  "y": 136,
+                  "width": 186,
+                  "height": 36
+                },
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "textAutoResize": "WIDTH_AND_HEIGHT",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.06666666666666667,
+                      "g": 0.09411764705882353,
+                      "b": 0.15294117647058825,
+                      "a": 1
+                    }
+                  }
+                ],
+                "styles": {
+                  "fill": "S:text",
+                  "text": "S:h1"
+                },
+                "style": {
+                  "fontFamily": "Inter",
+                  "fontWeight": 700,
+                  "fontSize": 28,
+                  "lineHeightPx": 36,
+                  "lineHeightUnit": "PIXELS",
+                  "letterSpacing": -0.56,
+                  "textAlignHorizontal": "LEFT"
+                }
+              },
+              {
+                "id": "1:105",
+                "name": "Subtitle",
+                "type": "TEXT",
+                "characters": "Sign in to continue to your account",
+                "absoluteBoundingBox": {
+                  "x": 24,
+                  "y": 180,
+                  "width": 342,
+                  "height": 24
+                },
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "textAutoResize": "HEIGHT",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.4196078431372549,
+                      "g": 0.4470588235294118,
+                      "b": 0.5019607843137255,
+                      "a": 1
+                    }
+                  }
+                ],
+                "styles": {
+                  "fill": "S:muted",
+                  "text": "S:body"
+                },
+                "style": {
+                  "fontFamily": "Inter",
+                  "fontWeight": 400,
+                  "fontSize": 16,
+                  "lineHeightPx": 24,
+                  "lineHeightUnit": "PIXELS",
+                  "letterSpacing": 0,
+                  "textAlignHorizontal": "LEFT"
+                },
+                "layoutSizingHorizontal": "FILL",
+                "layoutSizingVertical": "HUG"
+              }
+            ]
+          },
+          {
+            "id": "1:106",
+            "name": "Form",
+            "type": "FRAME",
+            "absoluteBoundingBox": {
+              "x": 24,
+              "y": 228,
+              "width": 342,
+              "height": 164
+            },
+            "constraints": {
+              "vertical": "TOP",
+              "horizontal": "LEFT"
+            },
+            "fills": [],
+            "layoutMode": "VERTICAL",
+            "itemSpacing": 16,
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG",
+            "children": [
+              {
+                "id": "1:107",
+                "name": "Input",
+                "type": "INSTANCE",
+                "componentId": "C:input",
+                "absoluteBoundingBox": {
+                  "x": 24,
+                  "y": 228,
+                  "width": 342,
+                  "height": 56
+                },
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "layoutMode": "HORIZONTAL",
+                "itemSpacing": 12,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+                "paddingBottom": 16,
+                "counterAxisAlignItems": "CENTER",
+                "layoutSizingHorizontal": "FILL",
+                "layoutSizingVertical": "FIXED",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 1,
+                      "g": 1,
+                      "b": 1,
+                      "a": 1
+                    }
+                  }
+                ],
+                "styles": {
+                  "fill": "S:white",
+                  "stroke": "S:border"
+                },
+                "strokes": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.8980392156862745,
+                      "g": 0.9058823529411765,
+                      "b": 0.9215686274509803,
+                      "a": 1
+                    }
+                  }
+                ],
+                "strokeWeight": 1,
+                "strokeAlign": "INSIDE",
+                "cornerRadius": 12,
+                "children": [
+                  {
+                    "id": "1:108",
+                    "name": "Icon/Mail",
+                    "type": "FRAME",
+                    "absoluteBoundingBox": {
+                      "x": 40,
+                      "y": 246,
+                      "width": 20,
+                      "height": 20
+                    },
+                    "constraints": {
+                      "vertical": "TOP",
+                      "horizontal": "LEFT"
+                    },
+                    "fills": [],
+                    "children": [
+                      {
+                        "id": "1:109",
+                        "name": "Vector",
+                        "type": "VECTOR",
+                        "absoluteBoundingBox": {
+                          "x": 42,
+                          "y": 248,
+                          "width": 16,
+                          "height": 16
+                        },
+                        "constraints": {
+                          "vertical": "TOP",
+                          "horizontal": "LEFT"
+                        },
+                        "fills": [
+                          {
+                            "type": "SOLID",
+                            "color": {
+                              "r": 0.4196078431372549,
+                              "g": 0.4470588235294118,
+                              "b": 0.5019607843137255,
+                              "a": 1
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "1:110",
+                    "name": "Placeholder",
+                    "type": "TEXT",
+                    "characters": "Email address",
+                    "absoluteBoundingBox": {
+                      "x": 72,
+                      "y": 244,
+                      "width": 278,
+                      "height": 24
+                    },
+                    "constraints": {
+                      "vertical": "TOP",
+                      "horizontal": "LEFT"
+                    },
+                    "textAutoResize": "HEIGHT",
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": {
+                          "r": 0.4196078431372549,
+                          "g": 0.4470588235294118,
+                          "b": 0.5019607843137255,
+                          "a": 1
+                        }
+                      }
+                    ],
+                    "styles": {
+                      "fill": "S:muted",
+                      "text": "S:body"
+                    },
+                    "style": {
+                      "fontFamily": "Inter",
+                      "fontWeight": 400,
+                      "fontSize": 16,
+                      "lineHeightPx": 24,
+                      "lineHeightUnit": "PIXELS",
+                      "letterSpacing": 0,
+                      "textAlignHorizontal": "LEFT"
+                    },
+                    "layoutSizingHorizontal": "FILL",
+                    "layoutSizingVertical": "HUG"
+                  }
+                ]
+              },
+              {
+                "id": "1:111",
+                "name": "Input",
+                "type": "INSTANCE",
+                "componentId": "C:input",
+                "absoluteBoundingBox": {
+                  "x": 24,
+                  "y": 300,
+                  "width": 342,
+                  "height": 56
+                },
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "layoutMode": "HORIZONTAL",
+                "itemSpacing": 12,
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 16,
+                "paddingBottom": 16,
+                "counterAxisAlignItems": "CENTER",
+                "layoutSizingHorizontal": "FILL",
+                "layoutSizingVertical": "FIXED",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 1,
+                      "g": 1,
+                      "b": 1,
+                      "a": 1
+                    }
+                  }
+                ],
+                "styles": {
+                  "fill": "S:white",
+                  "stroke": "S:border"
+                },
+                "strokes": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.8980392156862745,
+                      "g": 0.9058823529411765,
+                      "b": 0.9215686274509803,
+                      "a": 1
+                    }
+                  }
+                ],
+                "strokeWeight": 1,
+                "strokeAlign": "INSIDE",
+                "cornerRadius": 12,
+                "children": [
+                  {
+                    "id": "1:112",
+                    "name": "Icon/Lock",
+                    "type": "FRAME",
+                    "absoluteBoundingBox": {
+                      "x": 40,
+                      "y": 318,
+                      "width": 20,
+                      "height": 20
+                    },
+                    "constraints": {
+                      "vertical": "TOP",
+                      "horizontal": "LEFT"
+                    },
+                    "fills": [],
+                    "children": [
+                      {
+                        "id": "1:113",
+                        "name": "Vector",
+                        "type": "VECTOR",
+                        "absoluteBoundingBox": {
+                          "x": 42,
+                          "y": 320,
+                          "width": 16,
+                          "height": 16
+                        },
+                        "constraints": {
+                          "vertical": "TOP",
+                          "horizontal": "LEFT"
+                        },
+                        "fills": [
+                          {
+                            "type": "SOLID",
+                            "color": {
+                              "r": 0.4196078431372549,
+                              "g": 0.4470588235294118,
+                              "b": 0.5019607843137255,
+                              "a": 1
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "1:114",
+                    "name": "Placeholder",
+                    "type": "TEXT",
+                    "characters": "Password",
+                    "absoluteBoundingBox": {
+                      "x": 72,
+                      "y": 316,
+                      "width": 278,
+                      "height": 24
+                    },
+                    "constraints": {
+                      "vertical": "TOP",
+                      "horizontal": "LEFT"
+                    },
+                    "textAutoResize": "HEIGHT",
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": {
+                          "r": 0.4196078431372549,
+                          "g": 0.4470588235294118,
+                          "b": 0.5019607843137255,
+                          "a": 1
+                        }
+                      }
+                    ],
+                    "styles": {
+                      "fill": "S:muted",
+                      "text": "S:body"
+                    },
+                    "style": {
+                      "fontFamily": "Inter",
+                      "fontWeight": 400,
+                      "fontSize": 16,
+                      "lineHeightPx": 24,
+                      "lineHeightUnit": "PIXELS",
+                      "letterSpacing": 0,
+                      "textAlignHorizontal": "LEFT"
+                    },
+                    "layoutSizingHorizontal": "FILL",
+                    "layoutSizingVertical": "HUG"
+                  }
+                ]
+              },
+              {
+                "id": "1:115",
+                "name": "Forgot row",
+                "type": "FRAME",
+                "absoluteBoundingBox": {
+                  "x": 24,
+                  "y": 372,
+                  "width": 342,
+                  "height": 20
+                },
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "fills": [],
+                "layoutMode": "HORIZONTAL",
+                "primaryAxisAlignItems": "MAX",
+                "layoutSizingHorizontal": "FILL",
+                "layoutSizingVertical": "HUG",
+                "children": [
+                  {
+                    "id": "1:116",
+                    "name": "Forgot",
+                    "type": "TEXT",
+                    "characters": "Forgot password?",
+                    "absoluteBoundingBox": {
+                      "x": 246,
+                      "y": 372,
+                      "width": 120,
+                      "height": 20
+                    },
+                    "constraints": {
+                      "vertical": "TOP",
+                      "horizontal": "LEFT"
+                    },
+                    "textAutoResize": "WIDTH_AND_HEIGHT",
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": {
+                          "r": 0.30980392156862746,
+                          "g": 0.27450980392156865,
+                          "b": 0.8980392156862745,
+                          "a": 1
+                        }
+                      }
+                    ],
+                    "styles": {
+                      "fill": "S:primary",
+                      "text": "S:label"
+                    },
+                    "style": {
+                      "fontFamily": "Inter",
+                      "fontWeight": 500,
+                      "fontSize": 14,
+                      "lineHeightPx": 20,
+                      "lineHeightUnit": "PIXELS",
+                      "letterSpacing": 0,
+                      "textAlignHorizontal": "LEFT"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1:117",
+            "name": "Button/Primary",
+            "type": "INSTANCE",
+            "componentId": "C:btn",
+            "absoluteBoundingBox": {
+              "x": 24,
+              "y": 416,
+              "width": 342,
+              "height": 52
+            },
+            "constraints": {
+              "vertical": "TOP",
+              "horizontal": "LEFT"
+            },
+            "layoutMode": "HORIZONTAL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "CENTER",
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "FIXED",
+            "cornerRadius": 12,
+            "fills": [
+              {
+                "type": "SOLID",
+                "color": {
+                  "r": 0.30980392156862746,
+                  "g": 0.27450980392156865,
+                  "b": 0.8980392156862745,
+                  "a": 1
+                }
+              }
+            ],
+            "styles": {
+              "fill": "S:primary"
+            },
+            "effects": [
+              {
+                "type": "DROP_SHADOW",
+                "visible": true,
+                "color": {
+                  "r": 0.30980392156862746,
+                  "g": 0.27450980392156865,
+                  "b": 0.8980392156862745,
+                  "a": 0.3
+                },
+                "offset": {
+                  "x": 0,
+                  "y": 4
+                },
+                "radius": 12,
+                "spread": 0
+              }
+            ],
+            "children": [
+              {
+                "id": "1:118",
+                "name": "Label",
+                "type": "TEXT",
+                "characters": "Sign in",
+                "absoluteBoundingBox": {
+                  "x": 167,
+                  "y": 430,
+                  "width": 56,
+                  "height": 24
+                },
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "textAutoResize": "WIDTH_AND_HEIGHT",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 1,
+                      "g": 1,
+                      "b": 1,
+                      "a": 1
+                    }
+                  }
+                ],
+                "styles": {
+                  "fill": "S:white",
+                  "text": "S:button"
+                },
+                "style": {
+                  "fontFamily": "Inter",
+                  "fontWeight": 600,
+                  "fontSize": 16,
+                  "lineHeightPx": 24,
+                  "lineHeightUnit": "PIXELS",
+                  "letterSpacing": 0,
+                  "textAlignHorizontal": "LEFT"
+                }
+              }
+            ]
+          },
+          {
+            "id": "1:119",
+            "name": "Divider",
+            "type": "FRAME",
+            "absoluteBoundingBox": {
+              "x": 24,
+              "y": 492,
+              "width": 342,
+              "height": 20
+            },
+            "constraints": {
+              "vertical": "TOP",
+              "horizontal": "LEFT"
+            },
+            "fills": [],
+            "layoutMode": "HORIZONTAL",
+            "itemSpacing": 12,
+            "counterAxisAlignItems": "CENTER",
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG",
+            "children": [
+              {
+                "id": "1:120",
+                "name": "Line",
+                "type": "RECTANGLE",
+                "absoluteBoundingBox": {
+                  "x": 24,
+                  "y": 501,
+                  "width": 104,
+                  "height": 1
+                },
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.8980392156862745,
+                      "g": 0.9058823529411765,
+                      "b": 0.9215686274509803,
+                      "a": 1
+                    }
+                  }
+                ],
+                "styles": {
+                  "fill": "S:border"
+                },
+                "layoutSizingHorizontal": "FILL",
+                "layoutSizingVertical": "FIXED"
+              },
+              {
+                "id": "1:121",
+                "name": "Or",
+                "type": "TEXT",
+                "characters": "or continue with",
+                "absoluteBoundingBox": {
+                  "x": 140,
+                  "y": 492,
+                  "width": 110,
+                  "height": 20
+                },
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "textAutoResize": "WIDTH_AND_HEIGHT",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.4196078431372549,
+                      "g": 0.4470588235294118,
+                      "b": 0.5019607843137255,
+                      "a": 1
+                    }
+                  }
+                ],
+                "styles": {
+                  "fill": "S:muted",
+                  "text": "S:caption"
+                },
+                "style": {
+                  "fontFamily": "Inter",
+                  "fontWeight": 400,
+                  "fontSize": 14,
+                  "lineHeightPx": 20,
+                  "lineHeightUnit": "PIXELS",
+                  "letterSpacing": 0,
+                  "textAlignHorizontal": "LEFT"
+                }
+              },
+              {
+                "id": "1:122",
+                "name": "Line",
+                "type": "RECTANGLE",
+                "absoluteBoundingBox": {
+                  "x": 262,
+                  "y": 501,
+                  "width": 104,
+                  "height": 1
+                },
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.8980392156862745,
+                      "g": 0.9058823529411765,
+                      "b": 0.9215686274509803,
+                      "a": 1
+                    }
+                  }
+                ],
+                "styles": {
+                  "fill": "S:border"
+                },
+                "layoutSizingHorizontal": "FILL",
+                "layoutSizingVertical": "FIXED"
+              }
+            ]
+          },
+          {
+            "id": "1:123",
+            "name": "Frame 12",
+            "type": "FRAME",
+            "absoluteBoundingBox": {
+              "x": 24,
+              "y": 536,
+              "width": 342,
+              "height": 48
+            },
+            "constraints": {
+              "vertical": "TOP",
+              "horizontal": "LEFT"
+            },
+            "fills": [],
+            "layoutMode": "HORIZONTAL",
+            "itemSpacing": 12,
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG",
+            "children": [
+              {
+                "id": "1:124",
+                "name": "Button/Social",
+                "type": "INSTANCE",
+                "componentId": "C:social",
+                "absoluteBoundingBox": {
+                  "x": 24,
+                  "y": 536,
+                  "width": 165,
+                  "height": 48
+                },
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "layoutMode": "HORIZONTAL",
+                "itemSpacing": 8,
+                "primaryAxisAlignItems": "CENTER",
+                "counterAxisAlignItems": "CENTER",
+                "layoutSizingHorizontal": "FILL",
+                "layoutSizingVertical": "FIXED",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 1,
+                      "g": 1,
+                      "b": 1,
+                      "a": 1
+                    }
+                  }
+                ],
+                "styles": {
+                  "fill": "S:white",
+                  "stroke": "S:border"
+                },
+                "strokes": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.8980392156862745,
+                      "g": 0.9058823529411765,
+                      "b": 0.9215686274509803,
+                      "a": 1
+                    }
+                  }
+                ],
+                "strokeWeight": 1,
+                "strokeAlign": "INSIDE",
+                "cornerRadius": 12,
+                "children": [
+                  {
+                    "id": "1:125",
+                    "name": "Icon/Google",
+                    "type": "FRAME",
+                    "absoluteBoundingBox": {
+                      "x": 68.5,
+                      "y": 550,
+                      "width": 20,
+                      "height": 20
+                    },
+                    "constraints": {
+                      "vertical": "TOP",
+                      "horizontal": "LEFT"
+                    },
+                    "fills": [],
+                    "children": [
+                      {
+                        "id": "1:126",
+                        "name": "Vector",
+                        "type": "VECTOR",
+                        "absoluteBoundingBox": {
+                          "x": 70.5,
+                          "y": 552,
+                          "width": 16,
+                          "height": 16
+                        },
+                        "constraints": {
+                          "vertical": "TOP",
+                          "horizontal": "LEFT"
+                        },
+                        "fills": [
+                          {
+                            "type": "SOLID",
+                            "color": {
+                              "r": 0.4196078431372549,
+                              "g": 0.4470588235294118,
+                              "b": 0.5019607843137255,
+                              "a": 1
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "1:127",
+                    "name": "Label",
+                    "type": "TEXT",
+                    "characters": "Google",
+                    "absoluteBoundingBox": {
+                      "x": 96.5,
+                      "y": 548,
+                      "width": 48,
+                      "height": 20
+                    },
+                    "constraints": {
+                      "vertical": "TOP",
+                      "horizontal": "LEFT"
+                    },
+                    "textAutoResize": "WIDTH_AND_HEIGHT",
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": {
+                          "r": 0.06666666666666667,
+                          "g": 0.09411764705882353,
+                          "b": 0.15294117647058825,
+                          "a": 1
+                        }
+                      }
+                    ],
+                    "styles": {
+                      "fill": "S:text",
+                      "text": "S:label"
+                    },
+                    "style": {
+                      "fontFamily": "Inter",
+                      "fontWeight": 500,
+                      "fontSize": 14,
+                      "lineHeightPx": 20,
+                      "lineHeightUnit": "PIXELS",
+                      "letterSpacing": 0,
+                      "textAlignHorizontal": "LEFT"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "1:128",
+                "name": "Button/Social",
+                "type": "INSTANCE",
+                "componentId": "C:social",
+                "absoluteBoundingBox": {
+                  "x": 201,
+                  "y": 536,
+                  "width": 165,
+                  "height": 48
+                },
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "layoutMode": "HORIZONTAL",
+                "itemSpacing": 8,
+                "primaryAxisAlignItems": "CENTER",
+                "counterAxisAlignItems": "CENTER",
+                "layoutSizingHorizontal": "FILL",
+                "layoutSizingVertical": "FIXED",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 1,
+                      "g": 1,
+                      "b": 1,
+                      "a": 1
+                    }
+                  }
+                ],
+                "styles": {
+                  "fill": "S:white",
+                  "stroke": "S:border"
+                },
+                "strokes": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.8980392156862745,
+                      "g": 0.9058823529411765,
+                      "b": 0.9215686274509803,
+                      "a": 1
+                    }
+                  }
+                ],
+                "strokeWeight": 1,
+                "strokeAlign": "INSIDE",
+                "cornerRadius": 12,
+                "children": [
+                  {
+                    "id": "1:129",
+                    "name": "Icon/Apple",
+                    "type": "FRAME",
+                    "absoluteBoundingBox": {
+                      "x": 245.5,
+                      "y": 550,
+                      "width": 20,
+                      "height": 20
+                    },
+                    "constraints": {
+                      "vertical": "TOP",
+                      "horizontal": "LEFT"
+                    },
+                    "fills": [],
+                    "children": [
+                      {
+                        "id": "1:130",
+                        "name": "Vector",
+                        "type": "VECTOR",
+                        "absoluteBoundingBox": {
+                          "x": 247.5,
+                          "y": 552,
+                          "width": 16,
+                          "height": 16
+                        },
+                        "constraints": {
+                          "vertical": "TOP",
+                          "horizontal": "LEFT"
+                        },
+                        "fills": [
+                          {
+                            "type": "SOLID",
+                            "color": {
+                              "r": 0.4196078431372549,
+                              "g": 0.4470588235294118,
+                              "b": 0.5019607843137255,
+                              "a": 1
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "1:131",
+                    "name": "Label",
+                    "type": "TEXT",
+                    "characters": "Apple",
+                    "absoluteBoundingBox": {
+                      "x": 273.5,
+                      "y": 548,
+                      "width": 48,
+                      "height": 20
+                    },
+                    "constraints": {
+                      "vertical": "TOP",
+                      "horizontal": "LEFT"
+                    },
+                    "textAutoResize": "WIDTH_AND_HEIGHT",
+                    "fills": [
+                      {
+                        "type": "SOLID",
+                        "color": {
+                          "r": 0.06666666666666667,
+                          "g": 0.09411764705882353,
+                          "b": 0.15294117647058825,
+                          "a": 1
+                        }
+                      }
+                    ],
+                    "styles": {
+                      "fill": "S:text",
+                      "text": "S:label"
+                    },
+                    "style": {
+                      "fontFamily": "Inter",
+                      "fontWeight": 500,
+                      "fontSize": 14,
+                      "lineHeightPx": 20,
+                      "lineHeightUnit": "PIXELS",
+                      "letterSpacing": 0,
+                      "textAlignHorizontal": "LEFT"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1:132",
+            "name": "Footer",
+            "type": "FRAME",
+            "absoluteBoundingBox": {
+              "x": 24,
+              "y": 608,
+              "width": 342,
+              "height": 20
+            },
+            "constraints": {
+              "vertical": "TOP",
+              "horizontal": "LEFT"
+            },
+            "fills": [],
+            "layoutMode": "HORIZONTAL",
+            "itemSpacing": 4,
+            "primaryAxisAlignItems": "CENTER",
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG",
+            "children": [
+              {
+                "id": "1:133",
+                "name": "Prompt",
+                "type": "TEXT",
+                "characters": "Don't have an account?",
+                "absoluteBoundingBox": {
+                  "x": 89,
+                  "y": 608,
+                  "width": 158,
+                  "height": 20
+                },
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "textAutoResize": "WIDTH_AND_HEIGHT",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.4196078431372549,
+                      "g": 0.4470588235294118,
+                      "b": 0.5019607843137255,
+                      "a": 1
+                    }
+                  }
+                ],
+                "styles": {
+                  "fill": "S:muted",
+                  "text": "S:caption"
+                },
+                "style": {
+                  "fontFamily": "Inter",
+                  "fontWeight": 400,
+                  "fontSize": 14,
+                  "lineHeightPx": 20,
+                  "lineHeightUnit": "PIXELS",
+                  "letterSpacing": 0,
+                  "textAlignHorizontal": "LEFT"
+                }
+              },
+              {
+                "id": "1:134",
+                "name": "Sign up",
+                "type": "TEXT",
+                "characters": "Sign up",
+                "absoluteBoundingBox": {
+                  "x": 251,
+                  "y": 608,
+                  "width": 50,
+                  "height": 20
+                },
+                "constraints": {
+                  "vertical": "TOP",
+                  "horizontal": "LEFT"
+                },
+                "textAutoResize": "WIDTH_AND_HEIGHT",
+                "fills": [
+                  {
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.30980392156862746,
+                      "g": 0.27450980392156865,
+                      "b": 0.8980392156862745,
+                      "a": 1
+                    }
+                  }
+                ],
+                "styles": {
+                  "fill": "S:primary",
+                  "text": "S:label"
+                },
+                "style": {
+                  "fontFamily": "Inter",
+                  "fontWeight": 500,
+                  "fontSize": 14,
+                  "lineHeightPx": 20,
+                  "lineHeightUnit": "PIXELS",
+                  "letterSpacing": 0,
+                  "textAlignHorizontal": "LEFT"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "styles": {
+        "S:white": {
+          "key": "k1",
+          "name": "Surface/Base",
+          "styleType": "FILL"
+        },
+        "S:primary": {
+          "key": "k2",
+          "name": "Primary/500",
+          "styleType": "FILL"
+        },
+        "S:text": {
+          "key": "k3",
+          "name": "Text/Primary",
+          "styleType": "FILL"
+        },
+        "S:muted": {
+          "key": "k4",
+          "name": "Text/Muted",
+          "styleType": "FILL"
+        },
+        "S:border": {
+          "key": "k5",
+          "name": "Border/Default",
+          "styleType": "FILL"
+        },
+        "S:h1": {
+          "key": "k6",
+          "name": "Heading/H1",
+          "styleType": "TEXT"
+        },
+        "S:body": {
+          "key": "k7",
+          "name": "Body/Regular",
+          "styleType": "TEXT"
+        },
+        "S:label": {
+          "key": "k8",
+          "name": "Label/Medium",
+          "styleType": "TEXT"
+        },
+        "S:button": {
+          "key": "k9",
+          "name": "Button/Label",
+          "styleType": "TEXT"
+        },
+        "S:caption": {
+          "key": "k10",
+          "name": "Caption/Regular",
+          "styleType": "TEXT"
+        }
+      },
+      "components": {
+        "C:input": {
+          "key": "ck1",
+          "name": "Input"
+        },
+        "C:btn": {
+          "key": "ck2",
+          "name": "Button/Primary"
+        },
+        "C:social": {
+          "key": "ck3",
+          "name": "Button/Social"
+        }
+      }
+    }
+  }
+}

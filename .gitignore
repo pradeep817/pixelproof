@@ -1,0 +1,5 @@
+node_modules/
+dist/
+# Client designs and their snapshots stay out of the repo (local regression tests only).
+test/fixtures/real/
+test/__snapshots__/real_*
